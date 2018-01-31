@@ -18,10 +18,12 @@ const getParsers = () => {
   })
 }
 
+const state = {
+  firstname: 'Oliver',
+  lastname: 'Ross',
+  job: 'Software Engineer'
+}
+
 getParsers().then(parsers => {
-  console.log(parsers.simpleArithmetic.parse('2*(2+3)'))
-  console.log(parsers.simpleArithmeticWithInitializer.parse('5*5', {
-    fake: 1
-  }))
-  console.log(parsers.boolean.parse('true && (true && false)'))
+  console.log(parsers.state.parse('firstname==Oliver', state))
 })
