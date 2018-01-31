@@ -1,0 +1,22 @@
+{
+  "name": "pegjs-spike",
+  "version": "0.0.0",
+  "description": "a spike on pegjs",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/revilossor/pegjs-spike.git"
+  },
+  "author": "oliver.ross@hotmail.com",
+  "license": "SEE LICENCE IN LICENCE",
+  "bugs": {
+    "url": "https://github.com/revilossor/pegjs-spike/issues"
+  },
+  "homepage": "https://github.com/revilossor/pegjs-spike#readme",
+  "dependencies": {
+    "pegjs": "^0.10.0"
+  }
+}
