@@ -19,11 +19,24 @@ const getParsers = () => {
 }
 
 const state = {
-  firstname: 'Oliver',
-  lastname: 'Ross',
-  job: 'Software Engineer'
+  person: {
+    details: {
+      name: {
+        first: 'Oliver',
+        last: 'Ross'
+      }
+    }
+  },
+  job: 'Software Engineer',
+  bool: true,
+  yesno: 'Yes',
+  a: {
+    nested: {
+      thing: 'this is working!'
+    }
+  }
 }
 
 getParsers().then(parsers => {
-  console.log(parsers.state.parse('firstname==Oliver', state))
+  console.log(parsers.dev.parse('yesno', state))
 })
